@@ -1,0 +1,36 @@
+---
+type: Combiner
+combine_type: 'mix-power'
+inputs:
+  - type: AudioFile
+    filepath: sample.mp3
+  - type: Normalize
+    input:
+      type: Overdrive
+      input:
+        type: Pitch
+        input:
+          type: AudioFile
+          filepath: sample.mp3
+        amount: -3
+      gain_db: 30
+      colour: 30
+    db_level: -30
+  - type: Bass
+    input:
+      type: Phaser
+      input:
+        type: Pitch
+        input:
+          type: AudioFile
+          filepath: sample.mp3
+        amount: -4
+      gain_in: 1
+      gain_out: 0.8
+      delay: 3
+      decay: 0.4
+      speed: 0.5
+      modulation_shape: triangular
+    gain_db: 25
+    frequency: 200
+    slope: 0.5

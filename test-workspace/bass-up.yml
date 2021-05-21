@@ -1,0 +1,8 @@
+---
+type: Bass
+input:
+  type: AudioFile
+  filepath: sample.mp3
+gain_db: 20
+frequency: 100
+slope: 0.5
