@@ -1,0 +1,6 @@
+---
+type: Normalize
+input:
+  type: AudioFile
+  filepath: sample.mp3
+db_level: -3

@@ -1,0 +1,10 @@
+---
+type: Normalize
+input:
+  type: Overdrive
+  input:
+    type: AudioFile
+    filepath: sample.mp3
+  gain_db: 20
+  colour: 20
+db_level: -20

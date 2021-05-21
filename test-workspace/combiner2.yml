@@ -1,0 +1,24 @@
+---
+type: Combiner
+combine_type: 'mix-power'
+inputs:
+  - type: AudioFile
+    filepath: sample.mp3
+  - type: Pitch
+    input:
+      type: AudioFile
+      filepath: sample.mp3
+    amount: -1
+  - type: Phaser
+    input:
+      type: Pitch
+      input:
+        type: AudioFile
+        filepath: sample.mp3
+      amount: -1.5
+    gain_in: 0.8
+    gain_out: 0.74
+    delay: 5
+    decay: 0.4
+    speed: 2
+    modulation_shape: sinusoidal

@@ -1,0 +1,29 @@
+---
+type: Combiner
+combine_type: 'mix-power'
+inputs:
+  - type: AudioFile
+    filepath: sample.mp3
+  - type: Pitch
+    input:
+      type: AudioFile
+      filepath: sample.mp3
+    amount: -3
+  - type: Bass
+    input:
+      type: Phaser
+      input:
+        type: Pitch
+        input:
+          type: AudioFile
+          filepath: sample.mp3
+        amount: -4
+      gain_in: 0.8
+      gain_out: 0.74
+      delay: 3
+      decay: 0.4
+      speed: 0.5
+      modulation_shape: triangular
+    gain_db: 20
+    frequency: 100
+    slope: 0.5

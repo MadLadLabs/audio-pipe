@@ -1,0 +1,6 @@
+---
+type: Pitch
+input:
+  type: AudioFile
+  filepath: sample.mp3
+amount: -4

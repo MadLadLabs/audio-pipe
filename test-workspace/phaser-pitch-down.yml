@@ -1,0 +1,14 @@
+---
+type: Phaser
+input:
+  type: Pitch
+  input:
+    type: AudioFile
+    filepath: sample.mp3
+  amount: -4
+gain_in: 0.8
+gain_out: 0.74
+delay: 3
+decay: 0.4
+speed: 0.5
+modulation_shape: triangular
